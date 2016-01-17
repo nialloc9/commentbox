@@ -1,0 +1,157 @@
+@import "comment_insert.css"; /* This imports another css document into the file.*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'arial';
+}
+
+body{
+    background: #c7c7c7;
+}
+a img{
+    border:none;
+}
+
+.wrapper{
+    width: 750px;
+    background: #fff;
+    border: 1px solid gainsboro;
+    margin: 10px auto 10px auto;
+    height: auto;
+}
+
+.page-data{
+    width: auto;
+    height: 50px;
+    color: #666;
+    margin: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.comment-wrapper{
+    margin: 10px;
+    border: 1px solid #e1e1e1;
+    height: auto;
+    width:auto;
+    color: #444;
+}
+
+h3.comment-title{
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    margin: 0 5px 0 5px;
+    color: #555;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.comments-list{
+    height: auto;
+    font-size: 13px;
+    margin: 5px 5px 10px 5px;
+    color: #555;
+}
+
+ul.comments-holder-ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+ul.comments-holder-ul li.comment-holder{
+    list-style-type: none;
+    height: auto;
+    width: auto;
+    margin: 5px 0 10px 0;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    position: relative;
+}
+
+ul.comments-holder-ul li.comment-holder:hover{
+    border: 1px solid #c1c1c1;
+}
+
+ul.comments-holder-ul li.comment-holder .user-img{
+    float: left;
+    height: 65px;
+    width: 65px;
+    margin: 0 10px 0 0;
+}
+
+ul.comments-holder-ul li.comment-holder .user-img img.user-img-pic{
+    width: 55px;
+    height: auto;
+    margin: 5px;
+    border: 1px solid;
+}
+
+ul.comments-holder-ul li.comment-holder .user-img img.user-img-pic:hover{
+    border: #919191;
+}
+
+
+.comment-body{
+    width: auto;
+}
+
+ul.comments-holder-ul li.comment-holder h3.username-field{
+    height: 30px;
+    line-height: 27px;
+    color: #2E5CB8;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    word-wrap: normal;
+}
+
+ul.comments-holder-ul li.comment-holder h3.username-field:hover{
+    color: #252a93;
+}
+ul.comments-holder-ul li.comment-holder .comment-text{
+    display: block;
+    width: auto;
+    font-size: 13px;
+    margin: 0 10px 10px 75px; /*We know this because the width of ul.comments-holder-ul li.comment-holder .user-img is 65 and has a margin of 10 */
+}
+
+ul.comments-holder-ul li.comment-holder:hover .comment-buttons-holder{
+    display: block;
+}
+
+
+.comment-buttons-holder{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 20px;
+}
+
+.comment-buttons-holder ul{
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.comment-buttons-holder ul li{
+    float: right;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 18px;
+    color: #FFFFFF;
+    background: #2E5CB8;
+    cursor: pointer; /*This changes how the cursor appears over it from text to the mouse arrow*/
+}
+
+.comment-buttons-holder ul li:hover{
+    color: #444;
+    background: #6d8dcd;
+}
