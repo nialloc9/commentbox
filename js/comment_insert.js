@@ -30,9 +30,7 @@ function comment_post_btn_click(){
             function(data) {
                 //Success
                 //Task: Insert html into teh ul/li
-                comment_insert(jQuery.parseJSON(data));
-                console.log('ResponseText' + data);
-            }
+                comment_insert(jQuery.parseJSON(data));}
         );
 
         console.log('  Comment  ' + _comment + '  Username:  ' + _username + '  User Id:  ' + _userId);

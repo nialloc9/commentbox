@@ -2,7 +2,6 @@
 
 
     if(isset($_POST['task']) && $_POST['task'] =='comment_insert'){
-        require_once '../defines.php';
 
         $userId = $_POST['userId'];
         $comment =  str_replace("\n", "<br>", $_POST['comment']);
@@ -13,7 +12,6 @@
 
 
         require_once '../sql/models/comments.php';
-        //require_once MODELS_DIR . 'comments.php';
 
         if(class_exists('Comments') && class_exists('Subscribers')){
             $userInfo = Subscribers::getSubscriber( $userId );
@@ -38,6 +36,6 @@
         }
         echo json_encode( $std );
     }else{
-        header('location: /');
+
     }
 ?>
