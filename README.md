@@ -5,3 +5,5 @@ will then need to change the queries that are being used here to ones that conne
 
 If you are the user who created the comment an x will appear in the top right hand corner of the comment which enables you to delete the comment.
 
+Please look at the screenshot folder to see screenshots of this project working.
+
